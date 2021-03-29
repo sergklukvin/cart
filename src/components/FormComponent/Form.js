@@ -7,7 +7,7 @@ import * as yup from 'yup';
 import './Form.css';
 
 const SignupSchema = yup.object().shape({
-  product: yup.string().required(),
+  product: yup.string().required().test('len', 'must be max 30 characters', val => val.toString().length <= 30),
   price: yup.number().typeError('price must be a number').positive(),
   quantity: yup
     .number()
