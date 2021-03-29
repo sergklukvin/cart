@@ -1,0 +1,14 @@
+.qty {
+  margin-right: 15px;
+}
+
+h2 {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  text-align: right;
+  margin-right: 15px;
+}
+
+button[type="button"] {
+  min-width: 30px;
+  margin: 5px;
+}
